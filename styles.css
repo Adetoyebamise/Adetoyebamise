@@ -79,10 +79,10 @@ body.scale-cv {
 }
 .scale-cv .bd-container {
   max-width: 595px;
-  height: 842px;
+  max-height: 842px;
 }
 .scale-cv .section {
-  padding: 1.5rem 0.8rem;
+  padding: 0.98rem 0.8rem;
 }
 .scale-cv .section__title {
   margin-bottom: 0.75rem;

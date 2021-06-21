@@ -10,6 +10,7 @@ toggleMenu.addEventListener("click", () => {
 // remove menu mobile
 const navNodeList = document.querySelectorAll(".nav__list");
 navNodeList.forEach((navElement) => {
+  console.log(navElement);
   navElement.addEventListener("click", () => {
     navMenuToggle.classList.remove("show__menu");
   });
@@ -102,6 +103,6 @@ resumeButton.addEventListener("click", () => {
   scaleCv();
   // 2. the pdf is generated
   generateResume();
-  // 3. the scale-cv class is removed from the body after 5 seconds to ..
+  // // 3. the scale-cv class is removed from the body after 5 seconds to ..
   setTimeout(removeScaledCv, 2000);
 });

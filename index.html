@@ -67,6 +67,7 @@
     <main class="l-main bd-container">
       <div class="resume__left"></div>
       <div class="resume__right"></div>
+      <!-- all element within this div is generated in pdf -->
       <div class="resume" id="area-cv">
         <div class="resume__left">
           <!-- home -->
@@ -98,10 +99,16 @@
                 >
               </div>
             </div>
+            <!-- button to generate and download pdf. available for desktop -->
+            <i
+              class="fas fa-download generate-pdf"
+              title="Generate pdf"
+              id="resume-button"
+            ></i>
           </section>
           <!-- social -->
           <section class="social section">
-            <h2 class="section__title">SOCIAL</h2>
+            <h2 class="section__title">Social</h2>
             <div class="social__container bd-grid">
               <a
                 href="https://linkedin.com/adetoye-babalola-355118167/"
@@ -124,16 +131,16 @@
           </section>
           <!-- profile -->
           <section class="profile section" id="profile">
-            <h2 class="section-title">Profile</h2>
+            <h2 class="section__title">Profile</h2>
             <p class="profile__description">
               A young African who has harboured a deep love for engineering and
-              literature; currently contributing to the Africa stories through
+              literature; currently contributing to Africa stories through
               Technology.
             </p>
           </section>
           <!-- education -->
           <section class="education section" id="education">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section__title">Education</h2>
             <div class="education__container bd-grid">
               <div class="education__content">
                 <div class="education__time">
@@ -143,6 +150,10 @@
                 <div class="education__data bd-grid">
                   <h3 class="education__title">INTERN</h3>
                   <span class="education__studies">Skill Up Africa</span>
+                  <span class="education__descriptoin"
+                    >Software Development</span
+                  >
+
                   <span class="education__year">January 2021 - June 2021</span>
                 </div>
               </div>
@@ -156,6 +167,9 @@
                   <span class="education__studies"
                     >Obafemi Awolowo University, Ile-Ife</span
                   >
+                  <span class="education__description"
+                    >B.Sc Electronic/Electrical Engineering</span
+                  >
                   <span class="education__year">2013 - 2019</span>
                 </div>
               </div>
@@ -163,7 +177,7 @@
           </section>
           <!-- skills -->
           <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section__title">Skills</h2>
             <div class="skills__content bd-grid">
               <ul class="skills__data">
                 <li class="skills__name">
@@ -195,7 +209,7 @@
         <div class="resume__right">
           <!-- experience -->
           <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section__title">Experience</h2>
             <div class="experience__container bd-grid">
               <div class="experience__content">
                 <div class="experience__time">
@@ -203,7 +217,9 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">SIWES II Staff.</h3>
+                  <h3 class="experience__title">
+                    SIWES II Staff, Transmission Company of Nigeria Osogbo
+                  </h3>
                   <span class="experience__company"
                     >OCTOBER 2017 - APRIL 2017</span
                   >
@@ -220,7 +236,9 @@
                   <!-- <span class="experience__line"></span> -->
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">SIWES I Staff.</h3>
+                  <h3 class="experience__title">
+                    SIWES I Staff, Electrical Maintenance Department, O.A.U IFE.
+                  </h3>
                   <span class="experience__company">JUNE 2017 - JULY 2017</span>
                   <p class="experience__description">
                     Lines maintenance, monitoring and control of power
@@ -237,9 +255,7 @@
               <div class="certificate__content">
                 <h3 class="cerificate__title">Nigeria Society of Engineer</h3>
                 <p class="certificate__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque assumenda pariatur esse aut? Voluptas dolorum quam,
-                  veritatis maxime sunt illum.
+                  <i class="fas fa-hard-hat home__icon"></i>Member.
                 </p>
               </div>
             </div>
@@ -284,7 +300,7 @@
           </section>
           <!-- languages -->
           <section class="languages section">
-            <h2 class="section-title">Languages</h2>
+            <h2 class="section__title">Languages</h2>
             <div class="languages__container">
               <ul class="languages__content bd-grid">
                 <li class="languages__name">
@@ -322,7 +338,7 @@
       <i class="fas fa-angle-double-up scrolltop__icon"></i>
     </a>
     <!-- HTML2PDF -->
-    <script src=""></script>
+    <script src="html2pdf.bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="app.js"></script>
   </body>
